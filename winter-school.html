@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【学生募集】ウィンタースクール＆クリスマス交流会 2026 | 浜通りプロジェクト</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-green: #008252;
+      --primary-green-light: #F0FDF4;
+      --primary-green-hover: #006841;
+      --school-pink: #D4387E;
+      --school-pink-light: #FDF2F7;
+      --startup-blue: #0077B6;
+      --startup-blue-light: #F0F9FF;
+      --cta-orange: #EA580C;
+      --cta-orange-hover: #C2410C;
+      --text-main: #1D2939;
+      --text-muted: #475467;
+      --text-sub: #667085;
+      --bg-page: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --border-color: #E2E8F0;
+      --shadow-sm: 0 1px 3px rgba(16, 24, 40, 0.05);
+      --shadow-md: 0 4px 16px -2px rgba(16, 24, 40, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 0 80px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .top-bar {
+      background: #1E293B;
+      color: #F8FAFC;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 8px 16px;
+      text-align: center;
+      letter-spacing: 0.04em;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F0FDF4 100%);
+      border-bottom: 1px solid #D1FAE5;
+      padding: 36px 16px 32px 16px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .project-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #FFFFFF;
+      border: 1px solid #A7F3D0;
+      color: var(--primary-green);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 9999px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-title {
+      font-size: 23px;
+      font-weight: 900;
+      line-height: 1.35;
+      color: #0F172A;
+      margin-bottom: 10px;
+    }
+
+    .hero-title span.highlight {
+      color: var(--primary-green);
+    }
+
+    .hero-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    .support-pill-box {
+      background: #FFFFFF;
+      border: 1px dashed #F59E0B;
+      border-radius: 12px;
+      padding: 12px 16px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .support-pill-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #B45309;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 2px;
+    }
+
+    .support-pill-desc {
+      font-size: 12.5px;
+      color: #4B5563;
+      line-height: 1.55;
+    }
+
+    /* CTA Card Component */
+    .cta-card {
+      background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%);
+      border: 2px solid #FDBA74;
+      border-radius: 16px;
+      padding: 18px 16px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .cta-deadline-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 800;
+      color: #C2410C;
+    }
+
+    .badge-urgent {
+      background: #EA580C;
+      color: #FFFFFF;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.04em;
+    }
+
+    .btn-action {
+      display: block;
+      width: 100%;
+      background: var(--cta-orange);
+      color: #FFFFFF !important;
+      text-decoration: none;
+      padding: 13px 20px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 800;
+      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.28);
+      transition: all 0.15s ease-in-out;
+    }
+
+    .btn-action:hover {
+      background: var(--cta-orange-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-action:active {
+      transform: translateY(1px);
+    }
+
+    .cta-caption {
+      font-size: 11.5px;
+      color: #7C2D12;
+    }
+
+    /* Regular Cards */
+    .card {
+      background: var(--bg-card);
+      border-radius: 18px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      padding: 24px 20px;
+      margin-bottom: 22px;
+    }
+
+    .section-title {
+      font-size: 17.5px;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      border-left: 5px solid var(--primary-green);
+      padding-left: 10px;
+    }
+
+    .notice-box {
+      background: #FEF3C7;
+      border: 1px solid #FDE68A;
+      color: #92400E;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 8px 12px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Role Boxes */
+    .role-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .role-box {
+      background: #F8FAFC;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+
+    .role-box.day1 {
+      border-left: 4px solid var(--primary-green);
+    }
+
+    .role-box.day2 {
+      border-left: 4px solid var(--school-pink);
+    }
+
+    .role-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .role-tag {
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .tag-comm {
+      background: var(--primary-green-light);
+      color: var(--primary-green);
+      border: 1px solid #BBF7D0;
+    }
+
+    .tag-school {
+      background: var(--school-pink-light);
+      color: var(--school-pink);
+      border: 1px solid #FBCFE8;
+    }
+
+    /* Tab Switcher */
+    .tab-nav {
+      display: flex;
+      background: #F1F5F9;
+      padding: 4px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      gap: 4px;
+    }
+
+    .tab-nav-btn {
+      flex: 1;
+      padding: 10px 8px;
+      border: none;
+      background: transparent;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      color: #64748B;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .tab-nav-btn.active {
+      background: #FFFFFF;
+      color: var(--text-main);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    /* Pattern Cards (Tab 1) */
+    .pattern-card {
+      background: #F8FAFC;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+    }
+
+    .pattern-card.recommend {
+      background: #F0FDF4;
+      border-color: #86EFAC;
+    }
+
+    .pattern-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .pattern-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .pattern-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .pattern-badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 10px;
+      background: #E2E8F0;
+      color: #334155;
+    }
+
+    .pattern-badge.rec {
+      background: var(--primary-green);
+      color: #FFFFFF;
+    }
+
+    .pattern-desc {
+      font-size: 13px;
+      color: #334155;
+      line-height: 1.6;
+    }
+
+    .pattern-subnote {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 6px;
+      background: #FFFFFF;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+    }
+
+    /* Calendar Matrix (Tab 2) */
+    .calendar-scroll {
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+    }
+
+    .cal-grid {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      text-align: center;
+      background: #FFFFFF;
+    }
+
+    .cal-grid th, .cal-grid td {
+      padding: 9px 6px;
+      border: 1px solid #E2E8F0;
+      white-space: nowrap;
+    }
+
+    .cal-grid thead th {
+      background: #F8FAFC;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .cal-grid thead th.col-date {
+      width: 115px;
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    .cal-grid tbody td.row-date {
+      text-align: left;
+      font-weight: 700;
+      background: #F8FAFC;
+      padding-left: 10px;
+    }
+
+    .cal-grid tbody td.cell-yes {
+      background: #F0FDF4;
+      color: #15803D;
+      font-weight: 800;
+    }
+
+    .cal-grid tbody td.cell-half {
+      background: #EFF6FF;
+      color: #1D4ED8;
+      font-weight: 800;
+    }
+
+    .cal-grid tbody td.cell-none {
+      color: #94A3B8;
+    }
+
+    /* Timeline Days */
+    .timeline-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 6px;
+    }
+
+    .day-box {
+      background: #F8FAFC;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .day-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #CBD5E1;
+    }
+
+    .day-tag {
+      font-size: 11.5px;
+      font-weight: 800;
+      background: #334155;
+      color: #FFFFFF;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .day-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .time-table {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 13.5px;
+    }
+
+    .time-row {
+      display: flex;
+      gap: 12px;
+    }
+
+    .time-badge {
+      min-width: 65px;
+      font-weight: 800;
+      color: var(--primary-green);
+    }
+
+    .time-text {
+      color: #334155;
+      flex: 1;
+    }
+
+    .time-sub {
+      font-size: 12px;
+      color: #64748B;
+      margin-top: 2px;
+    }
+
+    /* Support Section */
+    .support-points {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 13.5px;
+    }
+
+    .support-points li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .point-icon {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-top: 24px;
+    }
+
+    footer a {
+      color: var(--school-pink);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- 1. ヒーローセクション -->
+    <header class="card hero">
+      <div class="project-badge">
+        <span>🌱</span> 浜通りプロジェクト 大学生・大学院生募集
+      </div>
+      <h1 class="hero-title">
+        子どもたちとつくる、<br>
+        双葉の<span class="highlight">冬休み＆クリスマス</span>。
+      </h1>
+      <p class="hero-subtitle">
+        12月24日(木) ドーナツ・パーティ ＆ 12月25日(金) ウィンタースクール<br>
+        双葉町・いわき市の子どもたち・高校生と過ごす特別企画
+      </p>
+
+      <!-- 旅費支援案内 -->
+      <div class="support-pill-box">
+        <div class="support-pill-title">
+          <span>🚅</span> 現地活動旅費（交通費・宿泊費等）の支援あり
+        </div>
+        <p class="support-pill-desc">
+          プロジェクト規定に基づき、往復交通費および宿泊費が支給されます（自己負担なし）。また、プログラム中の昼食も用意されます。
+        </p>
+      </div>
+
+      <!-- 導線 1: 最上部 -->
+      <div class="cta-card" style="width: 100%;">
+        <div class="cta-deadline-row">
+          <span class="badge-urgent" style="background: #2563EB;">受付中</span>
+          <span>参加申込フォーム：〆切 12月2日(水)</span>
+        </div>
+        <a href="https://forms.gle/Rq5aPw2WinaU8xjL8" target="_blank" rel="noopener" class="btn-action">
+          参加申込フォームを開く（Googleフォーム） ↗
+        </a>
+        <span class="cta-caption">※所要時間約3分 / 学年・専攻・所属大学不問</span>
+      </div>
+    </header>
+
+    <!-- 2. 企画の目的と大学生の役割 -->
+    <section class="card">
+      <h2 class="section-title">企画の目的と大学生の役割</h2>
+      <p style="font-size: 14.5px; color: #334155; line-height: 1.75; margin-bottom: 16px;">
+        双葉町立学校の児童生徒や地域の子どもたち、地元高校生（ふたば未来学園・星槎国際高校など）と交流する冬休み特別プログラムです。<br>
+        <strong>大学生・大学院生は、子どもたちの学びや体験に寄り添い、一緒に楽しい思い出を作りながら、双葉町と教育の現状を見ることができます。</strong>
+      </p>
+
+      <div class="role-grid">
+        <div class="role-box day1">
+          <div class="role-header">
+            <span style="font-size: 15px; font-weight: 800; color: var(--text-main);">12月24日(木)：ドーナツ・パーティ</span>
+            <span class="role-tag tag-comm">双葉町</span>
+          </div>
+          <p style="font-size: 13.5px; color: #475467; line-height: 1.65; margin-top: 6px;">
+            会場：双葉町「串と鉄板 だるま」貸切<br>
+            子どもたちと一緒に双葉町のソウルフードであるドーナツ作りやパーティ、ゲーム、外遊びを実施。冬休みの宿題や学習伴走も行います。
+          </p>
+        </div>
+
+        <div class="role-box day2">
+          <div class="role-header">
+            <span style="font-size: 15px; font-weight: 800; color: var(--text-main);">12月25日(金)：ウインタースクール＆伝統工芸体験</span>
+            <span class="role-tag tag-school">いわき市・工房</span>
+          </div>
+          <p style="font-size: 13.5px; color: #475467; line-height: 1.65; margin-top: 6px;">
+            会場：町立学校仮設校舎（午前） ＋ 陶吉郎窯いわき工房（午後）<br>
+            午前は学校での学習支援やレクリエーション。昼食後、午後は「大堀相馬焼」の絵付け体験を子どもたちと一緒に体験します。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 選べる参加日程パターン（タブ切り替え） -->
+    <section class="card">
+      <h2 class="section-title">選べる4つの参加パターン</h2>
+      <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px;">
+        講義や個人の予定に合わせて、最適なプランを選んでエントリーできます。
+      </p>
+
+      <!-- タブボタン -->
+      <div class="tab-nav">
+        <button class="tab-nav-btn active" onclick="changePatternTab('list')">リスト形式で確認</button>
+        <button class="tab-nav-btn" onclick="changePatternTab('calendar')">📅 カレンダー形式で比較</button>
+      </div>
+
+      <!-- パネル 1: リスト形式 -->
+      <div id="tab-list-view" class="tab-panel active">
+        <!-- ① フル -->
+        <div class="pattern-card recommend">
+          <div class="pattern-top-row">
+            <span class="pattern-title">① フル参加（オススメ！）</span>
+            <span class="pattern-badge rec">2泊3日 / 全参加</span>
+          </div>
+          <p class="pattern-desc">
+            23日(水)前泊から25日(金)の全行程に参加するプラン。子どもたちとじっくり絆を深め、双葉町といわき市の両方を体験できます。
+          </p>
+          <div class="pattern-subnote">
+            🏨 宿泊：23日双葉町前泊（宿事情によりいわき泊調整あり）、24日関の湯泊
+          </div>
+        </div>
+
+        <!-- ② 23-24 -->
+        <div class="pattern-card">
+          <div class="pattern-top-row">
+            <span class="pattern-title">② 23-24日参加（前泊＋1日目）</span>
+            <span class="pattern-badge">1泊2日</span>
+          </div>
+          <p class="pattern-desc">
+            23日(水)に前泊し、24日(木)のドーナツ・パーティ終了後に特急で帰任するプランです。
+          </p>
+          <div class="pattern-subnote">
+            🏨 宿泊：23日双葉町前泊（宿がなければいわき市泊）<br>
+            🚅 帰任：24日 15:32双葉発 特急ひたちに乗車予定
+          </div>
+        </div>
+
+        <!-- ③ 24日帰り -->
+        <div class="pattern-card">
+          <div class="pattern-top-row">
+            <span class="pattern-title">③ 24日 日帰り参加</span>
+            <span class="pattern-badge">日帰り</span>
+          </div>
+          <p class="pattern-desc">
+            24日(木)朝に現地入りし、ドーナツ・パーティのみ日帰りで参加するコンパクトなプランです（都内から特急で日帰り可）。
+          </p>
+        </div>
+
+        <!-- ④ 24-25 -->
+        <div class="pattern-card">
+          <div class="pattern-top-row">
+            <span class="pattern-title">④ 24-25日参加（当日合流＋2日目）</span>
+            <span class="pattern-badge">1泊2日</span>
+          </div>
+          <p class="pattern-desc">
+            23日に講義等がある方向け。24日(木)朝から合流し、24日夜に関の湯に宿泊、25日のウィンタースクールまで参加します。
+          </p>
+          <div class="pattern-subnote">
+            🏨 宿泊：24日関の湯泊
+          </div>
+        </div>
+      </div>
+
+      <!-- パネル 2: カレンダー形式（縦：日付 / 横：パターン） -->
+      <div id="tab-cal-view" class="tab-panel">
+        <div class="calendar-scroll">
+          <table class="cal-grid">
+            <thead>
+              <tr>
+                <th class="col-date">日程・行程</th>
+                <th>① フル</th>
+                <th>② 23-24</th>
+                <th>③ 24日帰り</th>
+                <th>④ 24-25</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="row-date">12/23(水) 前泊</td>
+                <td class="cell-yes">● 宿泊<br><span style="font-size:10px;">双葉/いわき</span></td>
+                <td class="cell-yes">● 宿泊<br><span style="font-size:10px;">双葉/いわき</span></td>
+                <td class="cell-none">―</td>
+                <td class="cell-none">―</td>
+              </tr>
+              <tr>
+                <td class="row-date">12/24(木) パーティ</td>
+                <td class="cell-yes">● 終日参加</td>
+                <td class="cell-half">▲ 15:32発<br><span style="font-size:10px;">特急で帰任</span></td>
+                <td class="cell-yes">● 終日参加<br><span style="font-size:10px;">日帰り</span></td>
+                <td class="cell-yes">● 終日参加<br><span style="font-size:10px;">24日朝合流</span></td>
+              </tr>
+              <tr>
+                <td class="row-date">12/24(木) 宿泊</td>
+                <td class="cell-yes">● 関の湯泊</td>
+                <td class="cell-none">―</td>
+                <td class="cell-none">―</td>
+                <td class="cell-yes">● 関の湯泊</td>
+              </tr>
+              <tr>
+                <td class="row-date">12/25(金) 学校・体験</td>
+                <td class="cell-yes">● 終日参加</td>
+                <td class="cell-none">―</td>
+                <td class="cell-none">―</td>
+                <td class="cell-yes">● 終日参加</td>
+              </tr>
+              <tr>
+                <td class="row-date">12/25(金) 帰任</td>
+                <td class="cell-yes">16:29泉発<br><span style="font-size:10px;">特急ひたち</span></td>
+                <td class="cell-none">―</td>
+                <td class="cell-none">―</td>
+                <td class="cell-yes">16:29泉発<br><span style="font-size:10px;">特急ひたち</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 導線 2: パターンセクション直下 -->
+      <div class="cta-card" style="margin-top: 18px;">
+        <div class="cta-deadline-row">
+          <span class="badge-urgent">受付中</span>
+          <span>参加申込フォーム：〆切 12月2日(水)</span>
+        </div>
+        <a href="https://forms.gle/Rq5aPw2WinaU8xjL8" target="_blank" rel="noopener" class="btn-action">
+          希望日程を選んで応募する ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- 4. 詳細スケジュール -->
+    <section class="card">
+      <h2 class="section-title">詳細スケジュール</h2>
+      
+      <!-- 修正要件：境界線の前の注意書き -->
+      <div class="notice-box">
+        <span>⚠️</span> 一部変更の可能性がございます。
+      </div>
+
+      <div class="timeline-container">
+        <!-- DAY 1 -->
+        <div class="day-box">
+          <div class="day-head">
+            <span class="day-tag">DAY 1</span>
+            <span class="day-title">12月23日(水) 前泊日</span>
+          </div>
+          <div class="time-table">
+            <div class="time-row">
+              <span class="time-badge">午後〜夜</span>
+              <div class="time-text">
+                <div style="font-weight: 700; color: var(--text-main);">双葉町へ移動・前泊</div>
+                <div class="time-sub">※宿泊先：双葉町内（宿が埋まった場合はいわき市内のホテルに宿泊となります）</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div class="day-box">
+          <div class="day-head">
+            <span class="day-tag" style="background:var(--primary-green);">DAY 2</span>
+            <span class="day-title">12月24日(木) ドーナツ・パーティ</span>
+          </div>
+          <div class="time-table">
+            <div class="time-row">
+              <span class="time-badge">10:30</span>
+              <div class="time-text">
+                <div style="font-weight: 700; color: var(--text-main);">「串と鉄板 だるま」集合</div>
+                <div class="time-sub">（買い出しの関係から集合時間を早める場合があります）</div>
+              </div>
+            </div>
+            <div class="time-row">
+              <span class="time-badge">10:30~15:00</span>
+              <div class="time-text">
+                <div style="font-weight: 700; color: var(--text-main);">ドーナツ作り・クリスマスパーティ・学習伴走</div>
+                <div class="time-sub">子どもたち・地元高校生と一緒にドーナツ作り、冬休みの勉強サポート、レクリエーション大会</div>
+              </div>
+            </div>
+            <div class="time-row">
+              <span class="time-badge">15:32</span>
+              <div class="time-text">
+                <div style="font-weight: 700; color: #C2410C;">パターン②の学生 帰任</div>
+                <div class="time-sub">※パターン②の学生は15:32双葉発特急ひたちに乗車予定</div>
+              </div>
+            </div>
+            <div class="time-row">
+              <span class="time-badge">17:00ごろ</span>
+              <div class="time-text">
+                <div style="font-weight: 700; color: var(--text-main);">宿泊施設到着（バス・レンタカー移動）</div>
+                <div class="time-sub">宿泊先：関の湯（温泉宿泊施設）にて宿泊・交流</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="day-box">
+          <div class="day-head">
+            <span class="day-tag" style="background:var(--school-pink);">DAY 3</span>
+            <span class="day-title">12月25日(金) ウインタースクール＆伝統工芸体験</span>
+          </div>
+          <div class="time-table">
+            <div class="time-row">
+              <span class="time-badge">09:00</span>
+              <div class="time-text">
+                <div style="font-weight: 700; color: var(--text-main);">双葉町立学校 仮設校舎 到着</div>
+              </div>
+            </div>
+            <div class="time-row">
+              <span class="time-badge">09:00~11:30</span>
+              <div class="time-text">
+                <div style="font-weight: 700; color: var(--text-main);">子どもたちの冬休み学習支援＆レクリエーション</div>
+              </div>
+            </div>
+            <div class="time-row">
+              <span class="time-badge">11:30~13:00</span>
+              <div class="time-text">
+                <div style="font-weight: 700; color: var(--text-main);">貸切バスで移動・昼食（ワンダーファーム）</div>
+              </div>
+            </div>
+            <div class="time-row">
+              <span class="time-badge">13:30~15:30</span>
+              <div class="time-text">
+                <div style="font-weight: 700; color: var(--text-main);">大堀相馬焼 絵付け体験（陶吉郎窯いわき工房）</div>
+              </div>
+            </div>
+            <div class="time-row">
+              <span class="time-badge">16:00~</span>
+              <div class="time-text">
+                <div style="font-weight: 700; color: var(--text-main);">移動、特急ひたちで帰任</div>
+                <div class="time-sub">（16:29泉発特急に乗車予定）</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 旅費支援・持ち物 -->
+    <section class="card">
+      <h2 class="section-title">参加サポートと安心の体制</h2>
+      <ul class="support-points">
+        <li>
+          <span class="point-icon">🚅</span>
+          <div>
+            <strong>現地活動旅費の支給</strong><br>
+            <span style="font-size: 13px; color: var(--text-muted);">往復の特急交通費・宿泊費は大学プロジェクト予算より補助されます。</span>
+          </div>
+        </li>
+        <li>
+          <span class="point-icon">🍱</span>
+          <div>
+            <strong>プログラム中の昼食負担なし</strong><br>
+            <span style="font-size: 13px; color: var(--text-muted);">24日・25日ともに現地での昼食費用は手配・支給されます。</span>
+          </div>
+        </li>
+        <li>
+          <span class="point-icon">🚌</span>
+          <div>
+            <strong>移動サポート</strong><br>
+            <span style="font-size: 13px; color: var(--text-muted);">現地での行程間移動は貸切バス・スタッフ車両等で行います。</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 導線 3: 最下部 -->
+    <section style="text-align: center; margin: 32px 0 16px 0;">
+      <div class="cta-card" style="background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%); border-color: #86EFAC;">
+        <div class="cta-deadline-row" style="color: #15803D;">
+          <span class="badge-urgent" style="background: #16A34A;">最終〆切</span>
+          <span>参加申込フォーム：〆切 12月2日(水)</span>
+        </div>
+        <a href="https://forms.gle/Rq5aPw2WinaU8xjL8" target="_blank" rel="noopener" class="btn-action" style="background: var(--primary-green);">
+          ウィンタースクールに参加エントリーする ↗
+        </a>
+        <span class="cta-caption" style="color: #166534;">子どもたちと一緒に過ごす冬休みにご参加をお待ちしています</span>
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+      <p>主催：浜通りプロジェクト</p>
+      <p style="margin-top: 4px;">お問い合わせ：<a href="mailto:todaisomapj@gmail.com">todaisomapj@gmail.com</a></p>
+    </footer>
+
+  </div>
+
+  <script>
+    function changePatternTab(tabType) {
+      const listView = document.getElementById('tab-list-view');
+      const calView = document.getElementById('tab-cal-view');
+      const buttons = document.querySelectorAll('.tab-nav-btn');
+
+      if (tabType === 'list') {
+        listView.classList.add('active');
+        calView.classList.remove('active');
+        buttons[0].classList.add('active');
+        buttons[1].classList.remove('active');
+      } else {
+        listView.classList.remove('active');
+        calView.classList.add('active');
+        buttons[0].classList.remove('active');
+        buttons[1].classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
