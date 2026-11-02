@@ -472,80 +472,180 @@
       </footer>
     </main>
 
-    <!-- 2. 後期予定カード（見やすく整理） -->
+     <!-- 2. 後期予定カード -->
     <section class="card-box">
       <div class="section-header">
         <span class="section-icon">📅</span>
         <h2 class="section-title">後期の活動予定</h2>
       </div>
 
-      <!-- 地域活動・学校活動 -->
-      <div class="cat-badge cat-community">🌿 地域活動・学校活動</div>
+      <!-- 学校活動 -->
+      <div class="cat-badge cat-school">🏫 学校活動</div>
+
+      <!-- ウインタースクール・クリスマスパーティー -->
+      <div class="event-card">
+        <div class="event-date-row">
+          <span class="event-date">12月24日(木) 〜 25日(金)</span>
+        </div>
+        <div class="event-title">ウインタースクール＆クリスマスパーティー</div>
+        <div class="event-meta">
+          24日(木)：子どもたちとのクリスマスパーティ＠双葉町（ドーナツ作り・外遊び・学習伴走）<br>
+          25日(金)：子どもたち向けウインタースクール＠いわき市 ＆ 伝統工芸（大堀相馬焼）絵付け体験
+        </div>
+        <div class="event-desc">
+          町立学校の児童生徒や地域の子どもたち、地元高校生と交流する冬休み特別プログラム。双葉町のソウルフードであるドーナツ作りや学習支援を実施します。<br>
+        </div>
+        <!-- ボタン -->
+        <a href="winter-school.html" class="event-btn">
+          ウインタースクール特設ページはこちら ↗
+        </a>
+      </div>
+
+      <!-- ゆめの森見学会(合宿)のご案内 -->
+      <div class="event-card featured">
+        <span class="recommend-tag">オススメ! 残席わずか!</span>
+        <div class="event-date-row">
+          <span class="event-date">2月16日(土) 〜 17日(日)</span>
+        </div>
+        <div class="event-title">ゆめの森見学会（視察合宿）</div>
+        <div class="event-meta">
+          場所：大熊町立学び舎ゆめの森（福島県大熊町）<br>
+          案内・講師：沖野昇平 氏（in the Rye株式会社 代表取締役）、新校舎設計関係者
+        </div>
+        <div class="event-desc">
+          双葉町のお隣の大熊町にあるこども園・小中一貫校「大熊町立学び舎ゆめの森」の視察合宿。ユニークな校舎建築や教育内容、まちづくりに関心のある方に特におすすめです。起業家の沖野氏による大熊ツアーや、ゆめの森・双葉町立学校新校舎（双葉遊学舎）両方の設計に関わった方によるレクチャーも開催します。<br>
+        </div>
+
+        <!-- 日程表（カレンダー形式テーブル：横スクロール制御付き） -->
+        <div style="margin-top: 12px; border-radius: 8px; border: 1px solid #E2E8F0; overflow-x: auto; background: #FFFFFF;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 12px; text-align: left; min-width: 290px;">
+            <thead>
+              <tr style="background: #F1F5F9; border-bottom: 1px solid #CBD5E1;">
+                <th style="padding: 6px 8px; width: 62px; font-weight: 800; color: #1E293B;">日程</th>
+                <th style="padding: 6px 8px; width: 84px; font-weight: 800; color: #1E293B;">時間・便</th>
+                <th style="padding: 6px 8px; font-weight: 800; color: #1E293B;">内容・行程</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- 16日 -->
+              <tr style="border-bottom: 1px solid #F1F5F9;">
+                <td rowspan="4" style="padding: 8px 6px; font-weight: 800; color: #B45309; background: #FFFBEB; vertical-align: top; border-right: 1px solid #E2E8F0; font-size: 11px;">
+                  2/16(土)
+                </td>
+                <td style="padding: 6px 8px; font-weight: 700; color: #0077B6; white-space: nowrap;">7:52発</td>
+                <td style="padding: 6px 8px; color: #334155;">
+                  特急ひたち3号（東京 ⇒ 大野）<br>
+                  <span style="font-size: 11px; color: #64748B;">※品川・上野乗車可</span>
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid #F1F5F9;">
+                <td style="padding: 6px 8px; font-weight: 700; color: #0077B6; white-space: nowrap;">13:00〜15:00</td>
+                <td style="padding: 6px 8px; color: #334155; font-weight: 700;">学び舎ゆめの森 学校見学</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #F1F5F9;">
+                <td style="padding: 6px 8px; font-weight: 700; color: #0077B6; white-space: nowrap;">15:30〜17:30</td>
+                <td style="padding: 6px 8px; color: #334155;">大熊町ツアー①</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #CBD5E1;">
+                <td style="padding: 6px 8px; font-weight: 700; color: #D4387E; white-space: nowrap;">宿泊</td>
+                <td style="padding: 6px 8px; color: #334155;">
+                  ほっと大熊<br>
+                  <span style="font-size: 11px; color: #64748B;">※団体予約手配</span>
+                </td>
+              </tr>
+
+              <!-- 17日 -->
+              <tr style="border-bottom: 1px solid #F1F5F9;">
+                <td rowspan="3" style="padding: 8px 6px; font-weight: 800; color: #B45309; background: #FFFBEB; vertical-align: top; border-right: 1px solid #E2E8F0; font-size: 11px;">
+                  2/17(日)
+                </td>
+                <td style="padding: 6px 8px; font-weight: 700; color: #0077B6; white-space: nowrap;">午前</td>
+                <td style="padding: 6px 8px; color: #334155;">大熊町ツアー②</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #F1F5F9;">
+                <td style="padding: 6px 8px; font-weight: 700; color: #0077B6; white-space: nowrap;">13:00〜15:00</td>
+                <td style="padding: 6px 8px; color: #334155; font-weight: 700;">学校建設に関するレクチャー</td>
+              </tr>
+              <tr>
+                <td style="padding: 6px 8px; font-weight: 700; color: #0077B6; white-space: nowrap;">15:37発</td>
+                <td style="padding: 6px 8px; color: #334155;">
+                  特急ひたち22号（大野 ⇒ 東京）<br>
+                  <span style="font-size: 11px; color: #64748B;">※品川・上野降車可</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- ボタン（修正済み） -->
+        <a href="https://forms.gle/vw2SEDnHzoxWHAJu6" target="_blank" rel="noopener" class="event-btn">
+          二次募集中！ ↗
+        </a>
+      </div>
+
+      <!-- 地域活動 -->
+      <div class="cat-badge cat-community" style="margin-top: 10px;">🌿 地域活動</div>
 
       <!-- 第5回ふたばまち学 -->
       <div class="event-card">
+        <span class="recommend-tag status-full">受付終了</span>
         <div class="event-date-row">
-          <span class="event-date">11月8日(日)</span>
+          <span class="event-date">11月8日(日) 10:30 〜 14:30</span>
         </div>
-        <div class="event-title">第5回ふたばまち学「歴史講義と町歩き②」</div>
+        <div class="event-title">第5回ふたばまち学「双葉町の歴史講義と町歩き②（地区名の由来）」</div>
         <div class="event-meta">
-          講師：朝川美幸 氏（仁和寺主任学芸員）、星洋和 氏（双葉町教委学芸員）
+          場所：双葉町役場本庁舎 1階大会議室<br>
+          講師：朝川美幸 氏（双葉町出身、仁和寺主任学芸員）、星洋和 氏（双葉町教育委員会学芸員）
         </div>
         <div class="event-desc">
-          テーマは「双葉町の地区名の由来」。「長塚」や「羽鳥」などの由来を深掘りする歴史講義・町歩き第2弾です（前泊・後泊可能）。
+          7月に実施して好評だった歴史講義・町歩きの第2弾。今回のテーマは「双葉町の地区名の由来」として、「長塚」や「羽鳥」などの由来を深掘りします。前泊・後泊をして伝承館や復興祈念公園等の訪問も可能です。<br>
+          ※前日11月7日(土)にはFUTAHOME共催「HOMEあう会（新学校についての意見交換）」も開催されます。
         </div>
       </div>
 
       <!-- 第6回ふたばまち学 -->
       <div class="event-card">
+        <span class="recommend-tag status-open">残席余裕あり!</span>
         <div class="event-date-row">
           <span class="event-date">11月21日(土) 13:00 〜 22日(日) 14:30</span>
         </div>
-        <div class="event-title">第6回ふたばまち学「映像ワークショップで再発見！双葉町の魅力(仮)」</div>
+        <div class="event-title">第6回ふたばまち学「みんなで挑戦！映像クリエイター体験」</div>
         <div class="event-meta">
           講師：田淵俊彦 氏（桜美林大学 教授）、ビジュアル・アーツ専修学生
         </div>
         <div class="event-desc">
-          専門機材を用いて一から映像撮影・編集を学び、グループで2日間かけて映像を完成させます（前泊・後泊可能）。
+          テレ東で番組制作の経験がある田淵教授と学生が専門機材を持参し、一から映像撮影・編集をレクチャー。少人数のグループで2日間かけて映像を完成させます（前泊・後泊可能）。
         </div>
+        <!-- ボタン（修正済み） -->
+        <a href="https://forms.gle/677Umqj9jVBR9tNF9" target="_blank" rel="noopener" class="event-btn">
+          募集中（11月11日〆切） ↗
+        </a>
       </div>
 
       <!-- 起業活動 -->
       <div class="cat-badge cat-startup" style="margin-top: 10px;">🚀 起業活動</div>
 
+      <!-- 起業家とめぐる大熊町ツアー -->
       <div class="event-card">
         <div class="event-date-row">
-          <span class="event-date">9/16, 9/25, 10/10, 10/24（各日11:30-15:00）</span>
+          <span class="event-date">11月27日(日) 11:30 〜 15:00</span>
         </div>
         <div class="event-title">起業家とめぐる大熊町ツアー</div>
         <div class="event-meta">
           案内：沖野昇平 氏（in the Rye株式会社 代表取締役）
         </div>
         <div class="event-desc">
-          都内から日帰り可能なプログラム（前・後泊可）。帰還困難区域の外観、CREVAおおくま、大熊インキュベーションセンター、学び舎ゆめの森の見学と対話を実施します。
+          都内から日帰り参加可能なプログラム（前・後泊可）。帰還困難区域の外観、CREVAおおくま（中間貯蔵センター）と大熊インキュベーションセンターの見学、学び舎ゆめの森の外観見学、沖野氏との対話を実施予定。参加者の希望に即したツアーも組んでもらえます。
         </div>
       </div>
 
-      <!-- 11月以降の予定（暫定） -->
-      <div class="cat-badge cat-future" style="margin-top: 10px;">📌 11月以降の予定（暫定）</div>
+      <!-- 2027年の予定（暫定） -->
+      <div class="cat-badge cat-future" style="margin-top: 10px;">📌 2027年の予定（暫定）</div>
 
       <div class="event-card">
         <ul class="future-list">
           <li class="future-item">
-            <span class="future-date">12月24日(木)</span>
-            <span class="future-text">子どもたちとのクリスマスパーティ＠双葉町（ドーナツ作り）</span>
-          </li>
-          <li class="future-item">
-            <span class="future-date">12月25日(金)</span>
-            <span class="future-text">子ども向けウィンタースクール＠双葉町 or いわき市</span>
-          </li>
-          <li class="future-item">
-            <span class="future-date">1月17日(日)</span>
+            <span class="future-date">1月24日(日)</span>
             <span class="future-text">歴史講義と町歩き 第3弾（予定）＠双葉町</span>
-          </li>
-          <li class="future-item">
-            <span class="future-date">2月16日(火)</span>
-            <span class="future-text">学び舎ゆめの森見学＠大熊町</span>
           </li>
           <li class="future-item">
             <span class="future-date">3月7日(日)</span>
@@ -553,13 +653,12 @@
           </li>
         </ul>
         <div class="note-box">
-          ※11月以降の日程は暫定のため、変更になる可能性があります。最新情報は公式LINEやInstagramをご確認ください。
+          ※2027年の日程は暫定のため、今後変更になる可能性があります。最新情報は公式LINEやInstagramをご確認ください。
         </div>
       </div>
 
     </section>
 
   </div>
-
 </body>
 </html>
