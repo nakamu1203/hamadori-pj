@@ -269,6 +269,19 @@
       border-radius: 6px;
       margin-bottom: 12px;
     }
+    .cat-badge.cat-school {
+      background: var(--school-bg);
+      color: var(--school-color);
+      border: 1px solid #FBCFE8;
+    }
+    .recommend-tag.status-full {
+      background: #64748B;
+      box-shadow: 0 2px 4px rgba(100, 116, 139, 0.2);
+    }
+    .recommend-tag.status-open {
+      background: #10B981;
+      box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
+    }
     .cat-badge.cat-community {
       background: var(--community-bg);
       color: var(--community-color);
@@ -327,7 +340,7 @@
       color: var(--text-main);
       margin-bottom: 6px;
       line-height: 1.4;
-      padding-right: 50px;
+      padding-right: 80px;
     }
     .event-meta {
       font-size: 12px;
@@ -343,6 +356,29 @@
       font-size: 12.5px;
       color: #374151;
       line-height: 1.55;
+    }
+
+    /* In-card Action Button */
+    .event-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: var(--main-green);
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 700;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 163, 104, 0.2);
+      transition: background-color 0.15s, transform 0.1s;
+    }
+    .event-btn:active {
+      transform: scale(0.98);
+      opacity: 0.9;
     }
 
     /* Future Schedule List */
